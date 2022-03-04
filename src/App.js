@@ -1,23 +1,46 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Sidebar from "./components/Sidebar";
+import { useState } from "react";
+import { FaHeart, FaBars } from "react-icons/fa";
+import Header from "./components/Header";
+import HeroSection from "./components/HeroSection";
 
 function App() {
+  const [rtl, setRtl] = useState(false);
+  const [collapsed, setCollapsed] = useState(false);
+  const [image, setImage] = useState(true);
+  const [toggled, setToggled] = useState(false);
+
+  // const handleCollapsedChange = (checked) => {
+  //   setCollapsed(checked);
+  // };
+
+  // const handleImageChange = (checked) => {
+  //   setImage(checked);
+  // };
+
+  const handleToggleSidebar = (value) => {
+    setToggled(value);
+  };
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="btn-toggle" onClick={() => handleToggleSidebar(true)}>
+        <FaBars />
+      </div>
+      <div className="container">
+        <Sidebar
+          collapsed={collapsed}
+          rtl={rtl}
+          toggled={toggled}
+          handleToggleSidebar={handleToggleSidebar}
+        />
+
+        <div className="main-content">
+          <Header />
+          <HeroSection />
+        </div>
+      </div>
     </div>
   );
 }

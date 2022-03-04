@@ -1,38 +1,85 @@
+* {
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  margin: 0;
+}
+
 .App {
-  text-align: center;
+  background: #fafafa;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.sidebar {
+  flex: 1;
+  height: 100vh;
+}
+.main-content {
+  flex: 5;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.btn-toggle {
+  display: none;
+}
+
+.hero-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 39px;
+  padding: 0px 22px 0px 20px;
+  gap: 20px;
+}
+
+.hero-container .item {
+  flex: 1;
+  display: flex;
+  align-items: flex-start;
+  background: white;
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.06);
+  border-radius: 10px;
+  padding: 16px 0 17px 15px;
+  gap: 9px;
+}
+
+.hero-container .item img {
+  flex: 1;
+  width: 40px;
+}
+.hero-container .item > div {
+  flex: 3;
+}
+
+.hero-container .item > div .value {
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: 600;
+  color: #171717;
+}
+
+.hero-container .item > div .status {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #aaaaaa;
+}
+.hero-container .item .last {
+  margin-top: 18px;
+}
+.hero-container .item .last img {
+  width: 14.67px;
+}
+
+.hero-container .item .last .index {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.hero-container .item .last .time {
+  font-size: 14px;
+  line-height: 17px;
+  color: #bdbdbd;
 }
