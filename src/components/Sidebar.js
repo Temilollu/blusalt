@@ -4,12 +4,10 @@ import {
   ProSidebar,
   Menu,
   MenuItem,
-  SubMenu,
   SidebarHeader,
   SidebarFooter,
   SidebarContent,
 } from "react-pro-sidebar";
-import { FaGithub } from "react-icons/fa";
 import "react-pro-sidebar/dist/css/styles.css";
 import "../styles/sidebar.css";
 import logo from "../images/Vector.svg";
@@ -20,13 +18,11 @@ import setting from "../images/Setting.svg";
 import message from "../images/rename.svg";
 import kyc from "../images/kyc.svg";
 import reports from "../images/Document.svg";
-const Aside = ({ collapsed, rtl, toggled, handleToggleSidebar }) => {
+const Aside = ({ toggled, handleToggleSidebar }) => {
   return (
     <ProSidebar
-      rtl={rtl}
-      collapsed={collapsed}
       toggled={toggled}
-      breakPoint="sm"
+      breakPoint="md"
       onToggle={handleToggleSidebar}
     >
       <SidebarHeader>

@@ -32,3 +32,37 @@
           </SubMenu>
         </Menu>
    
+
+   <div className="table">
+        <div className="table-head">
+          <p className="name-email">Name/Email</p>
+          <p className="type">Type</p>
+          <p className="status">Status</p>
+          <p className="date">Date</p>
+        </div>
+        <div className="table-body">
+          {tableData.map((item) => (
+            <div className="table-item" key={item.email}>
+              <div className="name-email-container">
+                <img src={item.image} alt="" />
+                <div className="name-email">
+                  <p className="name">{item.name}</p>
+                  <p className="email">{item.email}</p>
+                </div>
+              </div>
+              <div className="type">{item.type}</div>
+              <div className="status">
+                <span
+                  style={item.status === "Pending" ? pendingStyle : activeStyle}
+                >
+                  {item.status}
+                </span>
+              </div>
+              <div className="date">
+                <span> {item.date}</span>
+                <img src={arrow} alt="" />
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>

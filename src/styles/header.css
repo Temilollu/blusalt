@@ -13,6 +13,9 @@
   align-items: center;
   flex: 3;
 }
+.header-container .mobile-heading {
+  display: none;
+}
 
 .header-container .title {
   font-weight: bold;
@@ -47,4 +50,18 @@
 }
 .header-container .other-items .third {
   border-radius: 50px;
+}
+
+@media (max-width: 768px) {
+  .header-container {
+    align-items: normal !important;
+    flex-direction: column;
+  }
+  .header-container > .title {
+    display: none;
+  }
+  .header-container .mobile-heading {
+    display: flex;
+    align-items: center;
+  }
 }

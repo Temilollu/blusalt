@@ -33,12 +33,12 @@ const data = [
 
 export default function BarGraph() {
   return (
-    <ResponsiveContainer width={220} height={220}>
+    <ResponsiveContainer width={"100%"} height={220}>
       <BarChart
         style={{
           background: "#990D81",
         }}
-        width={220}
+        width={"100%"}
         height={220}
         data={data}
         margin={{
