@@ -3,13 +3,13 @@
 }
 
 .pro-sidebar {
-  height: 100vh !important;
+  height: auto !important;
   min-width: 230px;
   width: 230px;
 }
 
 .sidebar-logo {
-  padding: 30px 0 17px 0;
+  padding: 20px 0 5px 0;
   text-align: center;
 }
 .sidebar-logo img {
@@ -49,4 +49,29 @@
   background: rgba(255, 255, 255, 0.1);
   border-radius: 5px;
   color: #ffffff;
+}
+.sidebar-footer-container {
+  display: flex;
+  align-items: center;
+  padding: 10px 10px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  gap: 8px;
+}
+.sidebar-footer-container img {
+  border-radius: 50px;
+}
+
+.sidebar-footer-container .name {
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 0.75px;
+  color: #ffffff;
+}
+.sidebar-footer-container .title {
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 15px;
+  letter-spacing: 0.859533px;
+  color: rgba(255, 255, 255, 0.5);
 }

@@ -1,5 +1,5 @@
 import React from "react";
-
+import footerImage from "../images/footerImage.svg";
 import {
   ProSidebar,
   Menu,
@@ -59,30 +59,13 @@ const Aside = ({ collapsed, rtl, toggled, handleToggleSidebar }) => {
         </Menu>
       </SidebarContent>
 
-      <SidebarFooter style={{ textAlign: "center" }}>
-        <div
-          className="sidebar-btn-wrapper"
-          style={{
-            padding: "20px 24px",
-          }}
-        >
-          <a
-            href="https://github.com/azouaoui-med/react-pro-sidebar"
-            target="_blank"
-            className="sidebar-btn"
-            rel="noopener noreferrer"
-          >
-            <FaGithub />
-            <span
-              style={{
-                whiteSpace: "nowrap",
-                textOverflow: "ellipsis",
-                overflow: "hidden",
-              }}
-            >
-              viewSource
-            </span>
-          </a>
+      <SidebarFooter style={{ padding: "50px 10px" }}>
+        <div className="sidebar-footer-container">
+          <img src={footerImage} alt="" />
+          <div className="text">
+            <p className="name">Nafisa Sh.</p>
+            <p className="title">Support manager</p>
+          </div>
         </div>
       </SidebarFooter>
     </ProSidebar>

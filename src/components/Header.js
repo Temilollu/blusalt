@@ -19,7 +19,7 @@ const Header = () => {
         </p>
         <img src={first} alt="" />
         <img src={second} alt="" />
-        <img src={third} alt="" />
+        <img src={third} alt="" className="third" />
       </div>
     </div>
   );

@@ -4,6 +4,8 @@ import { useState } from "react";
 import { FaHeart, FaBars } from "react-icons/fa";
 import Header from "./components/Header";
 import HeroSection from "./components/HeroSection";
+import GraphContainer from "./components/GraphContainer";
+import Requests from "./components/Requests";
 
 function App() {
   const [rtl, setRtl] = useState(false);
@@ -39,6 +41,8 @@ function App() {
         <div className="main-content">
           <Header />
           <HeroSection />
+          <GraphContainer />
+          <Requests />
         </div>
       </div>
     </div>
