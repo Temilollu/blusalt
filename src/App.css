@@ -308,6 +308,10 @@
   }
   .graph-1 {
     width: 100%;
+    height: auto;
+  }
+  .graph-1 .left .bg {
+    font-size: 12px;
   }
   .graph-2 {
     width: 100%;

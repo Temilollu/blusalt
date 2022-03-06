@@ -44,13 +44,26 @@ export default function BarGraph() {
         margin={{
           top: 5,
           right: 10,
-          left: -10,
+          left: -20,
           bottom: 5,
         }}
       >
         <CartesianGrid strokeDasharray="3 3" vertical={false} />
-        <XAxis dataKey="name" stroke="white" />
-        <YAxis stroke="white" />
+        <XAxis
+          dataKey="name"
+          stroke="white"
+          tick={{
+            fontFamily: "Inter, sans-serif",
+            fontSize: "10px",
+          }}
+        />
+        <YAxis
+          stroke="white"
+          tick={{
+            fontFamily: "Inter, sans-serif",
+            fontSize: "10px",
+          }}
+        />
         <Bar dataKey="pv" fill="white" barSize={6} radius={5} />
       </BarChart>
     </ResponsiveContainer>
