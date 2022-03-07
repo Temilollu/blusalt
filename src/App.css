@@ -254,7 +254,7 @@
 .name-email-container {
   display: flex;
   flex: 2;
-  gap: 10px;
+  gap: 17px;
 }
 .name-email-container img {
   border-radius: 7px;

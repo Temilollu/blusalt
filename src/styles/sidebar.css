@@ -1,7 +1,11 @@
 .pro-sidebar > .pro-sidebar-inner {
   background: #990d81;
 }
-
+.sub-menu-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 .pro-sidebar {
   height: auto !important;
   min-width: 230px;

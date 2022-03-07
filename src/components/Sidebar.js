@@ -18,6 +18,7 @@ import setting from "../images/Setting.svg";
 import message from "../images/rename.svg";
 import kyc from "../images/kyc.svg";
 import reports from "../images/Document.svg";
+import arrowDownCircles from "../images/arrowDown.svg";
 const Aside = ({ toggled, handleToggleSidebar }) => {
   return (
     <ProSidebar
@@ -44,7 +45,9 @@ const Aside = ({ toggled, handleToggleSidebar }) => {
           </MenuItem>
           <MenuItem icon={<img src={reports} alt="" />}>Reports</MenuItem>
           <MenuItem icon={<img src={folder} alt="" />} className="menu-item">
-            Audit trial
+            <div className="sub-menu-container">
+              <span>Audit trial</span> <img src={arrowDownCircles} alt="" />
+            </div>
           </MenuItem>
           <MenuItem icon={<img src={users} alt="" />} className="menu-item">
             users
@@ -55,7 +58,7 @@ const Aside = ({ toggled, handleToggleSidebar }) => {
         </Menu>
       </SidebarContent>
 
-      <SidebarFooter style={{ padding: "50px 10px" }}>
+      <SidebarFooter style={{ padding: "50px 10px", borderTop: "none" }}>
         <div className="sidebar-footer-container">
           <img src={footerImage} alt="" />
           <div className="text">

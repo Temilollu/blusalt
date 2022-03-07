@@ -91,9 +91,9 @@ const data = [
 
 export default function Graph() {
   return (
-    <ResponsiveContainer width={"100%"} height={220}>
+    <ResponsiveContainer width="100%" height={220}>
       <LineChart
-        width={"100%"}
+        width={0}
         height={220}
         data={data}
         margin={{

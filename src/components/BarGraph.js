@@ -33,12 +33,12 @@ const data = [
 
 export default function BarGraph() {
   return (
-    <ResponsiveContainer width={"100%"} height={220}>
+    <ResponsiveContainer width="100%" height={220}>
       <BarChart
         style={{
           background: "#990D81",
         }}
-        width={"100%"}
+        width={0}
         height={220}
         data={data}
         margin={{
@@ -56,6 +56,7 @@ export default function BarGraph() {
             fontFamily: "Inter, sans-serif",
             fontSize: "10px",
           }}
+          tickLine={false}
         />
         <YAxis
           stroke="white"
@@ -63,6 +64,8 @@ export default function BarGraph() {
             fontFamily: "Inter, sans-serif",
             fontSize: "10px",
           }}
+          axisLine={false}
+          tickLine={false}
         />
         <Bar dataKey="pv" fill="white" barSize={6} radius={5} />
       </BarChart>
